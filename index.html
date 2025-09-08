@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Naura Arundaya</title>
+  <style>
+    :root{
+      --bg1:#be3455; /* gradasi awal */
+      --bg2:#f06292; /* gradasi akhir */
+      --card:#ffffff;
+      --name-color:#ffffff;
+      --accent:#fbd5e5;
+      --muted:#f1f1f1;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(135deg, var(--bg1), var(--bg2));
+      margin:0; 
+      padding:24px; 
+      color:#222
+    }
+    .card{max-width:760px;margin:0 auto;background:var(--card);padding:28px;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
+    h1{margin:0;font-size:1.8rem;color:var(--name-color);background:var(--bg1);padding:12px 20px;border-radius:12px}
+    h2{margin:18px 0 8px;font-size:1.05rem;color:var(--bg1)}
+    p{margin:6px 0;color:#333;line-height:1.5}
+    .muted{color:#555;font-size:.95rem}
+    .row{display:flex;gap:16px;flex-wrap:wrap}
+    .col{flex:1;min-width:200px}
+    .meta{background:#fff0f5;padding:12px;border-radius:12px;border:1px solid rgba(0,0,0,.1)}
+    ul{margin:6px 0 0 18px}
+    .skills{display:flex;gap:8px;flex-wrap:wrap}
+    .skill{padding:6px 12px;border-radius:999px;background:#fbd5e5;color:#222;font-size:.9rem}
+    footer{margin-top:18px;text-align:right;color:#f1f1f1;font-size:.85rem}
+
+    @media (max-width:520px){
+      .row{flex-direction:column}
+      .meta{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <header class="row" style="align-items:center;justify-content:space-between">
+      <div>
+        <h1>Naura Arundaya</h1>
+        <div class="muted">Mahasiswa Teknik Informatika — Universitas Hasanuddin (2023)</div>
+      </div>
+      <div class="meta col" style="flex:0 0 260px">
+        <div style="font-weight:600;color:var(--bg1)">Kontak</div>
+        <p style="margin:6px 0">Email: <a href="mailto:laysisneverflat@gmail.com">laysisneverflat@gmail.com</a></p>
+        <p style="margin:6px 0">Domisili: Makassar</p>
+        <p style="margin:6px 0">TTL: Balikpapan, 16 Desember 2004</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Ringkasan Profil</h2>
+      <p>Mahasiswa Teknik Informatika semester 5 yang aktif mengembangkan diri melalui organisasi PSM UNHAS, khususnya di bidang publikasi dan dokumentasi. Terampil dalam komunikasi, desain, serta kepemimpinan, dan memiliki ketertarikan pada dunia IT, manajemen, kreatif, dan musik.</p>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+      <p><strong>Universitas Hasanuddin</strong> — Teknik Informatika (2023 — sekarang)</p>
+    </section>
+
+    <section>
+      <h2>Pengalaman Organisasi</h2>
+      <ul>
+        <li><strong>PSM UNHAS</strong> — Koordinator OC PubDok (2024–2025)</li>
+        <li><strong>PSM UNHAS</strong> — Anggota BPH Kesekretariatan (2025)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <span class="skill">Desain Grafis</span>
+        <span class="skill">Public Speaking</span>
+        <span class="skill">Manajemen</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Bahasa</h2>
+      <p>Indonesia — Aktif<br>Inggris — Intermediate to Upper-Intermediate</p>
+    </section>
+
+    <section>
+      <h2>Hobi</h2>
+      <p>Musik</p>
+    </section>
+
+    <footer>© <span id="year"></span> Naura Arundaya</footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
